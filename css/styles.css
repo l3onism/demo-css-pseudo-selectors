@@ -1,1 +1,58 @@
-/* developer styles go here */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* :nth child selector - selects elements based on their postion as a child in any parent element */
+
+/* :first child is the first section within the flexbox */
+section:first-child {
+    background-color: crimson;
+}
+
+section:nth-child(2) {
+    background-color: tomato;
+}
+
+section:nth-child(3) {
+    background-color: khaki;
+}
+
+section:nth-child(4) {
+    background-color: lightgreen;
+}
+
+section:nth-child(5) {
+    background-color: lightseagreen;
+}
+
+/* :last-child is the very last section from the flexbox */
+section:last-child {
+    background-color: steelblue;
+}
+
+section:only-child {
+    background-color: whitesmoke;
+}
+
+/* nth of type selectors - selects elements based on their poistion as a child that TYPE of selcts */
+
+p:first-of-type {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+p:last-of-type {
+    font-size: 1rem;
+}
+
+p:nth-of-type(2) {
+    display: none;
+}
